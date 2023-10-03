@@ -2,7 +2,16 @@
 
 This project's origin is [here](https://github.com/weaviate/weaviate-examples/tree/main/clip-multi-modal-text-image-search).
 
-(TODO: Add Description)
+## Description
+The Multi-Modal Text/Image Search using CLIP project is a cutting-edge application that harnesses the power of CLIP (Contrastive Language-Image Pretraining) technology to enable users to search for images using natural language descriptions. Developed on top of the Weaviate platform, this project seamlessly integrates text and image search capabilities, allowing users to perform complex searches with ease.
+
+Features:
+
+1-Multi-Modal Search: This application combines textual descriptions with images, enabling users to perform searches using both modalities. Whether you describe an image in words or provide an image to search, the system understands your query contextually.
+
+2-Customizable Image Imports: Users can not only search through a set of sample images but also add their own images. The system supports various image formats, expanding the search possibilities for users.
+
+3-User-Friendly Frontend: The project provides an intuitive and simple-to-use frontend developed in React. The frontend interacts seamlessly with the Weaviate instance, offering a smooth user experience.
 
 ![Weaviate Multi-Modal Search](./weaviate-multi-modal-clip-search-demo.png)
 (TODO: Add demo video)
@@ -17,9 +26,9 @@ the [Weaviate JS Client
 Model Credits: This demo uses the [ckip-ViT-B32-multilingual-v1](https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1) model from [SBERT.net](https://sbert.net). Shoutout to Nils Reimers and his colleagues for the great Sentence Transformers models. 
 
 ## Prerequisites
-- Docker & Docker-Compose
-- Bash
-- Node.js and npm/yarn if you also want to run the frontend
+- Docker & Docker-Compose: Required to set up the Weaviate instance
+- Bash: Necessary for executing the provided setup scripts.
+- Node.js and npm/yarn: Optional for running the frontend locally.
 
 ## Setup instructions
 
