@@ -3,15 +3,8 @@
 This project's origin is [here](https://github.com/weaviate/weaviate-examples/tree/main/clip-multi-modal-text-image-search).
 
 ## Description
-The Multi-Modal Text/Image Search using CLIP project is a cutting-edge application that harnesses the power of CLIP (Contrastive Language-Image Pretraining) technology to enable users to search for images using natural language descriptions. Developed on top of the Weaviate platform, this project seamlessly integrates text and image search capabilities, allowing users to perform complex searches with ease.
 
-Features:
-
-1-Multi-Modal Search: This application combines textual descriptions with images, enabling users to perform searches using both modalities. Whether you describe an image in words or provide an image to search, the system understands your query contextually.
-
-2-Customizable Image Imports: Users can not only search through a set of sample images but also add their own images. The system supports various image formats, expanding the search possibilities for users.
-
-3-User-Friendly Frontend: The project provides an intuitive and simple-to-use frontend developed in React. The frontend interacts seamlessly with the Weaviate instance, offering a smooth user experience.
+The Multi-Modal Text/Image Search using CLIP project revolutionizes search capabilities by integrating CLIP technology, allowing users to search for images using natural language descriptions. Built on Weaviate, it supports multi-modal searches, combining text and images effortlessly. Users can describe images or provide images directly for contextual searches. The system is user-friendly, with a customizable interface and support for various image formats, ensuring a seamless and intuitive experience.
 
 ![Weaviate Multi-Modal Search](./weaviate-multi-modal-clip-search-demo.png)
 (TODO: Add demo video)
