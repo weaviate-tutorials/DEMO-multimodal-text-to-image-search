@@ -2,7 +2,9 @@
 
 This project's origin is [here](https://github.com/weaviate/weaviate-examples/tree/main/clip-multi-modal-text-image-search).
 
-(TODO: Add Description)
+## Description
+
+The Multi-Modal Text/Image Search using CLIP project revolutionizes search capabilities by integrating CLIP technology, allowing users to search for images using natural language descriptions. Built on Weaviate, it supports multi-modal searches, combining text and images effortlessly. Users can describe images or provide images directly for contextual searches. The system is user-friendly, with a customizable interface and support for various image formats, ensuring a seamless and intuitive experience.
 
 ![Weaviate Multi-Modal Search](./weaviate-multi-modal-clip-search-demo.png)
 (TODO: Add demo video)
@@ -17,9 +19,9 @@ the [Weaviate JS Client
 Model Credits: This demo uses the [ckip-ViT-B32-multilingual-v1](https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1) model from [SBERT.net](https://sbert.net). Shoutout to Nils Reimers and his colleagues for the great Sentence Transformers models. 
 
 ## Prerequisites
-- Docker & Docker-Compose
-- Bash
-- Node.js and npm/yarn if you also want to run the frontend
+- Docker & Docker-Compose: Required to set up the Weaviate instance
+- Bash: Necessary for executing the provided setup scripts.
+- Node.js and npm/yarn: Optional for running the frontend locally.
 
 ## Setup instructions
 
