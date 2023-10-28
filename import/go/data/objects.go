@@ -13,7 +13,7 @@ import (
 )
 
 func ImportObjects(ctx context.Context, client *weaviate.Client) error {
-	basePath := "../../../images"
+	basePath := "../../images"
 	files, err := ioutil.ReadDir(basePath)
 	if err != nil {
 		return err

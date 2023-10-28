@@ -27,8 +27,8 @@ function import_with_go() {
   cd ./import/go && cmd_go go mod vendor; go run cmd/main.go && cd -
 }
 
-run_go=false
-run_curl=true
+run_go=true
+run_curl=false
 
 while [[ "$#" -gt 0 ]]; do
   case $1 in
