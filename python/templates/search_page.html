@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weaviate v1.14.1 CLIP Demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    
+
+
+</head>
+<body>
+    <div class="container" style="text-align: center; max-width: 600px;">
+        <img alt="Weaviate Logo" src="{{url_for('static', filename='logo.svg')}}" width="33%" style="margin: 25px; max-height: 100px;">
+        <h1 class="title">Weaviate <code>v1.14.1</code> CLIP Demo</h1>
+        <h2 class="subtitle">Multi-Modal Image/Text search</h2>
+        <form method="POST" action="{{ url_for('home') }}" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input is-large" type="text" name="search_query" placeholder="Search for images">
+                </div>
+                <div class="control">
+                    <input type="submit" class="button is-info is-large" value="Search" style="background-color: #fa0171;">
+                </div>
+            </div>
+        </form>
+        {% if results.data %}
+        <div>
+            <div>
+                <img style="max-height: 400px;" alt="Certainty: " src="data:image/jpg;base64, {{ results.data.Get.MultiModal[0].image }}">
+                <div>Certainty: {{ "%0.2f" % (results.data.Get.MultiModal[0]._additional.certainty * 100)}} %</div>
+            </div>
+        </div>
+        
+        <!--button toggle: @TODO: FIX-->
+        <div class="control" style="padding-top: 20px;">
+            <input type="button" class="button is-info" value="{{ show_more_button_text }}" onclick="toggleShowMore()" style="background-color: #fa0171;">
+        </div>
+        <!--<end>button toggle: @TODO: FIX-->
+
+      
+        {% if show_more %}
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 20px;">
+            {% for result in results.rest %}
+            <div>
+                <img style="max-height: 100px;" alt="Certainty: " src="data:image/jpg;base64, {{ result.image }}">
+                <div>Certainty: {{ "%0.2f" % (results.data.Get.MultiModal._additional.certainty * 100)}} % %</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        </div>
+        {% endif %}
+        <div style="height: 50px;"></div>
+    </div>
+</body>
+</html>

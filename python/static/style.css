@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* container */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  /* Weaviate logo */
+  img[alt="Weaviate Logo"] {
+    width: 33%;
+    margin: 25px;
+    max-height: 100px;
+  }
+  
+  /* title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* subtitle */
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* search form */
+  form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* search input */
+  .input.is-large {
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  /* "Search" button */
+  .button.is-info.is-large {
+    background-color: #fa0171;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* "Show more" button */
+  .button.is-info {
+    background-color: #fa0171;
+    color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* results container */
+  .control {
+    padding-top: 20px;
+  }
+  
+  /* images in results */
+  img[alt="Certainty:"] {
+    max-height: 400px;
+    max-width: 100%;
+  }
+  
+  /* certainty percentage */
+  div[style="Certainty:"] {
+    font-size: 16px;
+  }
+  
+  /* container holding additional results */
+  div[style="display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 20px;"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0;
+  }
+  
+  /* individual results in the container */
+  div[key] {
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  /*images in additional results */
+  img[alt="Certainty:"] {
+    max-height: 100px;
+    max-width: 100%;
+  }
+  
+  /* certainty percentage in additional results */
+  div[style="Certainty:"] {
+    font-size: 16px;
+  }
+  
