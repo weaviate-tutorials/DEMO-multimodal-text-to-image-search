@@ -7,7 +7,9 @@ This project's origin is [here](https://github.com/weaviate/weaviate-examples/tr
 The Multi-Modal Text/Image Search using CLIP project revolutionizes search capabilities by integrating CLIP technology, allowing users to search for images using natural language descriptions. Built on Weaviate, it supports multi-modal searches, combining text and images effortlessly. Users can describe images or provide images directly for contextual searches. The system is user-friendly, with a customizable interface and support for various image formats, ensuring a seamless and intuitive experience.
 
 ![Weaviate Multi-Modal Search](./weaviate-multi-modal-clip-search-demo.png)
-(TODO: Add demo video)
+<br>
+
+![Weaviate Multi-Modal Search Demo Video](./text_to_img_clip_demo.gif)
 
 This example application spins up a Weaviate instance using the
 [multi2vec-clip](https://www.semi.technology/developers/weaviate/current/modules/multi2vec-clip.html)
